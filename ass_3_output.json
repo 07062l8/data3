@@ -3,482 +3,418 @@
     "graph_id" : 1,
     "input_stats" : {
       "vertices" : 5,
-      "edges" : 7
+      "edges" : 6
     },
     "prim" : {
       "mst_edges" : [ {
-        "from" : "A",
-        "to" : "C",
-        "weight" : 3
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "C",
-        "to" : "B",
-        "weight" : 2
+        "from" : "Karaganda",
+        "to" : "Pavlodar",
+        "weight" : 250
       }, {
-        "from" : "B",
-        "to" : "D",
-        "weight" : 5
+        "from" : "Karaganda",
+        "to" : "Shymkent",
+        "weight" : 400
       }, {
-        "from" : "D",
-        "to" : "E",
-        "weight" : 6
+        "from" : "Shymkent",
+        "to" : "Almaty",
+        "weight" : 300
       } ],
-      "total_cost" : 16,
-      "operations_count" : 23,
-      "execution_time_ms" : 6.0
+      "total_cost" : 1150,
+      "operations_count" : 18,
+      "execution_time_ms" : 7.0
     },
     "kruskal" : {
       "mst_edges" : [ {
-        "from" : "B",
-        "to" : "C",
-        "weight" : 2
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "A",
-        "to" : "C",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Pavlodar",
+        "weight" : 250
       }, {
-        "from" : "B",
-        "to" : "D",
-        "weight" : 5
+        "from" : "Almaty",
+        "to" : "Shymkent",
+        "weight" : 300
       }, {
-        "from" : "D",
-        "to" : "E",
-        "weight" : 6
+        "from" : "Shymkent",
+        "to" : "Karaganda",
+        "weight" : 400
       } ],
-      "total_cost" : 16,
-      "operations_count" : 30,
-      "execution_time_ms" : 18.0
+      "total_cost" : 1150,
+      "operations_count" : 25,
+      "execution_time_ms" : 3.0
     }
   }, {
     "graph_id" : 2,
     "input_stats" : {
       "vertices" : 4,
-      "edges" : 5
+      "edges" : 4
     },
     "prim" : {
       "mst_edges" : [ {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 1
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "B",
-        "to" : "C",
-        "weight" : 2
+        "from" : "Karaganda",
+        "to" : "Shymkent",
+        "weight" : 350
       }, {
-        "from" : "C",
-        "to" : "D",
-        "weight" : 3
+        "from" : "Shymkent",
+        "to" : "Almaty",
+        "weight" : 300
       } ],
-      "total_cost" : 6,
-      "operations_count" : 15,
+      "total_cost" : 850,
+      "operations_count" : 12,
       "execution_time_ms" : 0.0
     },
     "kruskal" : {
       "mst_edges" : [ {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 1
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "B",
-        "to" : "C",
-        "weight" : 2
+        "from" : "Almaty",
+        "to" : "Shymkent",
+        "weight" : 300
       }, {
-        "from" : "C",
-        "to" : "D",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Shymkent",
+        "weight" : 350
       } ],
-      "total_cost" : 6,
-      "operations_count" : 19,
+      "total_cost" : 850,
+      "operations_count" : 18,
       "execution_time_ms" : 0.0
     }
   }, {
     "graph_id" : 3,
     "input_stats" : {
       "vertices" : 10,
-      "edges" : 13
+      "edges" : 10
     },
     "prim" : {
       "mst_edges" : [ {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 5
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "B",
-        "to" : "D",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Pavlodar",
+        "weight" : 250
       }, {
-        "from" : "D",
-        "to" : "F",
-        "weight" : 2
+        "from" : "Pavlodar",
+        "to" : "Ust-Kamenogorsk",
+        "weight" : 300
       }, {
-        "from" : "D",
-        "to" : "C",
-        "weight" : 4
+        "from" : "Astana",
+        "to" : "Kostanay",
+        "weight" : 350
       }, {
-        "from" : "C",
-        "to" : "E",
-        "weight" : 6
+        "from" : "Kostanay",
+        "to" : "Aktobe",
+        "weight" : 400
       }, {
-        "from" : "E",
-        "to" : "G",
-        "weight" : 5
+        "from" : "Aktobe",
+        "to" : "Kyzylorda",
+        "weight" : 500
       }, {
-        "from" : "G",
-        "to" : "H",
-        "weight" : 3
+        "from" : "Kyzylorda",
+        "to" : "Shymkent",
+        "weight" : 280
       }, {
-        "from" : "H",
-        "to" : "I",
-        "weight" : 4
+        "from" : "Shymkent",
+        "to" : "Almaty",
+        "weight" : 300
       }, {
-        "from" : "I",
-        "to" : "J",
-        "weight" : 6
+        "from" : "Almaty",
+        "to" : "Taraz",
+        "weight" : 150
       } ],
-      "total_cost" : 38,
-      "operations_count" : 42,
+      "total_cost" : 2730,
+      "operations_count" : 35,
       "execution_time_ms" : 0.0
     },
     "kruskal" : {
       "mst_edges" : [ {
-        "from" : "D",
-        "to" : "F",
-        "weight" : 2
+        "from" : "Almaty",
+        "to" : "Taraz",
+        "weight" : 150
       }, {
-        "from" : "B",
-        "to" : "D",
-        "weight" : 3
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "G",
-        "to" : "H",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Pavlodar",
+        "weight" : 250
       }, {
-        "from" : "C",
-        "to" : "D",
-        "weight" : 4
+        "from" : "Shymkent",
+        "to" : "Kyzylorda",
+        "weight" : 280
       }, {
-        "from" : "H",
-        "to" : "I",
-        "weight" : 4
+        "from" : "Almaty",
+        "to" : "Shymkent",
+        "weight" : 300
       }, {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 5
+        "from" : "Ust-Kamenogorsk",
+        "to" : "Pavlodar",
+        "weight" : 300
       }, {
-        "from" : "E",
-        "to" : "G",
-        "weight" : 5
+        "from" : "Astana",
+        "to" : "Kostanay",
+        "weight" : 350
       }, {
-        "from" : "C",
-        "to" : "E",
-        "weight" : 6
+        "from" : "Aktobe",
+        "to" : "Kostanay",
+        "weight" : 400
       }, {
-        "from" : "I",
-        "to" : "J",
-        "weight" : 6
+        "from" : "Aktobe",
+        "to" : "Kyzylorda",
+        "weight" : 500
       } ],
-      "total_cost" : 38,
-      "operations_count" : 55,
+      "total_cost" : 2730,
+      "operations_count" : 52,
       "execution_time_ms" : 0.0
     }
   }, {
     "graph_id" : 4,
     "input_stats" : {
       "vertices" : 15,
-      "edges" : 19
+      "edges" : 13
     },
     "prim" : {
       "mst_edges" : [ {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 2
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "A",
-        "to" : "C",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Zhezkazgan",
+        "weight" : 300
       }, {
-        "from" : "C",
-        "to" : "D",
-        "weight" : 1
+        "from" : "Zhezkazgan",
+        "to" : "Kyzylorda",
+        "weight" : 320
       }, {
-        "from" : "D",
-        "to" : "F",
-        "weight" : 5
+        "from" : "Kyzylorda",
+        "to" : "Shymkent",
+        "weight" : 280
       }, {
-        "from" : "F",
-        "to" : "E",
-        "weight" : 2
+        "from" : "Shymkent",
+        "to" : "Almaty",
+        "weight" : 300
       }, {
-        "from" : "F",
-        "to" : "H",
-        "weight" : 3
+        "from" : "Almaty",
+        "to" : "Taraz",
+        "weight" : 150
       }, {
-        "from" : "H",
-        "to" : "I",
-        "weight" : 2
+        "from" : "Astana",
+        "to" : "Petropavl",
+        "weight" : 450
       }, {
-        "from" : "H",
-        "to" : "G",
-        "weight" : 4
+        "from" : "Petropavl",
+        "to" : "Oral",
+        "weight" : 500
       }, {
-        "from" : "I",
-        "to" : "J",
-        "weight" : 8
+        "from" : "Oral",
+        "to" : "Aktobe",
+        "weight" : 350
       }, {
-        "from" : "J",
-        "to" : "K",
-        "weight" : 6
-      }, {
-        "from" : "K",
-        "to" : "L",
-        "weight" : 5
-      }, {
-        "from" : "L",
-        "to" : "M",
-        "weight" : 3
-      }, {
-        "from" : "M",
-        "to" : "N",
-        "weight" : 4
-      }, {
-        "from" : "N",
-        "to" : "O",
-        "weight" : 7
+        "from" : "Aktobe",
+        "to" : "Kostanay",
+        "weight" : 400
       } ],
-      "total_cost" : 55,
-      "operations_count" : 70,
+      "total_cost" : 3250,
+      "operations_count" : 40,
       "execution_time_ms" : 0.0
     },
     "kruskal" : {
       "mst_edges" : [ {
-        "from" : "C",
-        "to" : "D",
-        "weight" : 1
+        "from" : "Pavlodar",
+        "to" : "Ekibastuz",
+        "weight" : 100
       }, {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 2
+        "from" : "Ust-Kamenogorsk",
+        "to" : "Semey",
+        "weight" : 120
       }, {
-        "from" : "E",
-        "to" : "F",
-        "weight" : 2
+        "from" : "Almaty",
+        "to" : "Taraz",
+        "weight" : 150
       }, {
-        "from" : "H",
-        "to" : "I",
-        "weight" : 2
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "A",
-        "to" : "C",
-        "weight" : 3
+        "from" : "Semey",
+        "to" : "Pavlodar",
+        "weight" : 200
       }, {
-        "from" : "F",
-        "to" : "H",
-        "weight" : 3
+        "from" : "Shymkent",
+        "to" : "Kyzylorda",
+        "weight" : 280
       }, {
-        "from" : "L",
-        "to" : "M",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Zhezkazgan",
+        "weight" : 300
       }, {
-        "from" : "G",
-        "to" : "H",
-        "weight" : 4
+        "from" : "Almaty",
+        "to" : "Shymkent",
+        "weight" : 300
       }, {
-        "from" : "M",
-        "to" : "N",
-        "weight" : 4
+        "from" : "Zhezkazgan",
+        "to" : "Kyzylorda",
+        "weight" : 320
       }, {
-        "from" : "D",
-        "to" : "F",
-        "weight" : 5
+        "from" : "Aktobe",
+        "to" : "Oral",
+        "weight" : 350
       }, {
-        "from" : "K",
-        "to" : "L",
-        "weight" : 5
+        "from" : "Aktobe",
+        "to" : "Kostanay",
+        "weight" : 400
       }, {
-        "from" : "J",
-        "to" : "K",
-        "weight" : 6
+        "from" : "Astana",
+        "to" : "Petropavl",
+        "weight" : 450
       }, {
-        "from" : "N",
-        "to" : "O",
-        "weight" : 7
-      }, {
-        "from" : "I",
-        "to" : "J",
-        "weight" : 8
+        "from" : "Oral",
+        "to" : "Petropavl",
+        "weight" : 500
       } ],
-      "total_cost" : 55,
-      "operations_count" : 106,
+      "total_cost" : 3670,
+      "operations_count" : 73,
       "execution_time_ms" : 0.0
     }
   }, {
     "graph_id" : 5,
     "input_stats" : {
       "vertices" : 20,
-      "edges" : 26
+      "edges" : 19
     },
     "prim" : {
       "mst_edges" : [ {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 4
+        "from" : "Astana",
+        "to" : "Kokshetau",
+        "weight" : 180
       }, {
-        "from" : "B",
-        "to" : "D",
-        "weight" : 5
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "D",
-        "to" : "F",
-        "weight" : 3
+        "from" : "Karaganda",
+        "to" : "Temirtau",
+        "weight" : 50
       }, {
-        "from" : "F",
-        "to" : "H",
-        "weight" : 4
+        "from" : "Temirtau",
+        "to" : "Balkhash",
+        "weight" : 180
       }, {
-        "from" : "H",
-        "to" : "G",
-        "weight" : 5
+        "from" : "Karaganda",
+        "to" : "Zhezkazgan",
+        "weight" : 300
       }, {
-        "from" : "G",
-        "to" : "E",
-        "weight" : 2
+        "from" : "Zhezkazgan",
+        "to" : "Kyzylorda",
+        "weight" : 320
       }, {
-        "from" : "E",
-        "to" : "C",
-        "weight" : 6
+        "from" : "Kyzylorda",
+        "to" : "Shymkent",
+        "weight" : 280
       }, {
-        "from" : "H",
-        "to" : "I",
-        "weight" : 7
+        "from" : "Shymkent",
+        "to" : "Almaty",
+        "weight" : 300
       }, {
-        "from" : "I",
-        "to" : "J",
-        "weight" : 6
+        "from" : "Almaty",
+        "to" : "Taraz",
+        "weight" : 150
       }, {
-        "from" : "J",
-        "to" : "K",
-        "weight" : 3
-      }, {
-        "from" : "K",
-        "to" : "L",
-        "weight" : 4
-      }, {
-        "from" : "L",
-        "to" : "M",
-        "weight" : 8
-      }, {
-        "from" : "M",
-        "to" : "N",
-        "weight" : 5
-      }, {
-        "from" : "N",
-        "to" : "O",
-        "weight" : 6
-      }, {
-        "from" : "O",
-        "to" : "P",
-        "weight" : 7
-      }, {
-        "from" : "P",
-        "to" : "Q",
-        "weight" : 4
-      }, {
-        "from" : "Q",
-        "to" : "R",
-        "weight" : 3
-      }, {
-        "from" : "R",
-        "to" : "S",
-        "weight" : 6
-      }, {
-        "from" : "S",
-        "to" : "T",
-        "weight" : 2
+        "from" : "Astana",
+        "to" : "Petropavl",
+        "weight" : 450
       } ],
-      "total_cost" : 90,
-      "operations_count" : 90,
+      "total_cost" : 2410,
+      "operations_count" : 44,
       "execution_time_ms" : 0.0
     },
     "kruskal" : {
       "mst_edges" : [ {
-        "from" : "E",
-        "to" : "G",
-        "weight" : 2
+        "from" : "Karaganda",
+        "to" : "Temirtau",
+        "weight" : 50
       }, {
-        "from" : "S",
-        "to" : "T",
-        "weight" : 2
+        "from" : "Rudny",
+        "to" : "Kostanay",
+        "weight" : 60
       }, {
-        "from" : "D",
-        "to" : "F",
-        "weight" : 3
+        "from" : "Pavlodar",
+        "to" : "Ekibastuz",
+        "weight" : 100
       }, {
-        "from" : "J",
-        "to" : "K",
-        "weight" : 3
+        "from" : "Ust-Kamenogorsk",
+        "to" : "Semey",
+        "weight" : 120
       }, {
-        "from" : "Q",
-        "to" : "R",
-        "weight" : 3
+        "from" : "Almaty",
+        "to" : "Taraz",
+        "weight" : 150
       }, {
-        "from" : "A",
-        "to" : "B",
-        "weight" : 4
+        "from" : "Astana",
+        "to" : "Kokshetau",
+        "weight" : 180
       }, {
-        "from" : "F",
-        "to" : "H",
-        "weight" : 4
+        "from" : "Temirtau",
+        "to" : "Balkhash",
+        "weight" : 180
       }, {
-        "from" : "K",
-        "to" : "L",
-        "weight" : 4
+        "from" : "Astana",
+        "to" : "Karaganda",
+        "weight" : 200
       }, {
-        "from" : "P",
-        "to" : "Q",
-        "weight" : 4
+        "from" : "Pavlodar",
+        "to" : "Semey",
+        "weight" : 200
       }, {
-        "from" : "B",
-        "to" : "D",
-        "weight" : 5
+        "from" : "Shymkent",
+        "to" : "Kyzylorda",
+        "weight" : 280
       }, {
-        "from" : "G",
-        "to" : "H",
-        "weight" : 5
+        "from" : "Karaganda",
+        "to" : "Zhezkazgan",
+        "weight" : 300
       }, {
-        "from" : "M",
-        "to" : "N",
-        "weight" : 5
+        "from" : "Almaty",
+        "to" : "Shymkent",
+        "weight" : 300
       }, {
-        "from" : "C",
-        "to" : "E",
-        "weight" : 6
+        "from" : "Oral",
+        "to" : "Atyrau",
+        "weight" : 300
       }, {
-        "from" : "I",
-        "to" : "J",
-        "weight" : 6
+        "from" : "Zhezkazgan",
+        "to" : "Kyzylorda",
+        "weight" : 320
       }, {
-        "from" : "N",
-        "to" : "O",
-        "weight" : 6
+        "from" : "Aktobe",
+        "to" : "Oral",
+        "weight" : 350
       }, {
-        "from" : "R",
-        "to" : "S",
-        "weight" : 6
+        "from" : "Aktobe",
+        "to" : "Kostanay",
+        "weight" : 400
       }, {
-        "from" : "H",
-        "to" : "I",
-        "weight" : 7
-      }, {
-        "from" : "O",
-        "to" : "P",
-        "weight" : 7
-      }, {
-        "from" : "L",
-        "to" : "M",
-        "weight" : 8
+        "from" : "Astana",
+        "to" : "Petropavl",
+        "weight" : 450
       } ],
-      "total_cost" : 90,
-      "operations_count" : 129,
+      "total_cost" : 3940,
+      "operations_count" : 108,
       "execution_time_ms" : 0.0
     }
   } ]
