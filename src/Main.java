@@ -7,6 +7,19 @@ import java.io.IOException;
 import java.util.*;
 
 public class Main {
+
+    static double measureMs(Runnable r, int runs) {
+        for (int i = 0; i < Math.min(3, runs); i++) r.run();
+
+        long totalNs = 0;
+        for (int i = 0; i < runs; i++) {
+            long s = System.nanoTime();
+            r.run();
+            totalNs += (System.nanoTime() - s);
+        }
+        return totalNs / 1_000_000.0 / runs;
+    }
+
     public static void main(String[] args) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode input = (ObjectNode) mapper.readTree(new File("ass_3_input.json"));
@@ -28,7 +41,12 @@ public class Main {
             )));
 
             Prim.Result primRes = Prim.run(nodes, edges);
+            double primTime = measureMs(() -> Prim.run(nodes, edges), 50);
+            primRes.timeMs = Double.parseDouble(String.format(Locale.US, "%.6f", primTime));
+
             Kruskal.Result kruskalRes = Kruskal.run(nodes, edges);
+            double kruskalTime = measureMs(() -> Kruskal.run(nodes, edges), 50);
+            kruskalRes.timeMs = Double.parseDouble(String.format(Locale.US, "%.6f", kruskalTime));
 
             ObjectNode outGraph = mapper.createObjectNode();
             outGraph.put("graph_id", id);
@@ -77,6 +95,6 @@ public class Main {
         output.set("results", results);
         mapper.writerWithDefaultPrettyPrinter().writeValue(new File("ass_3_output.json"), output);
 
-        System.out.println("Results written to ass_3_output.json");
+        System.out.println("Done. Results written to ass_3_output.json");
     }
 }

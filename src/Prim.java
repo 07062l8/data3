@@ -40,7 +40,7 @@ public class Prim {
             }
         }
 
-        res.timeMs = (System.nanoTime() - start) / 1000000;
+        res.timeMs = (System.nanoTime() - start) / 1000000.0;
         return res;
     }
 }
